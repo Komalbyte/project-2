@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkyCast</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="weather-wrapper">
+    <div class="weather-card">
+      <div class="weather-header">
+        <h1 class="city-name">
+          <span id="text_location">Delhi</span>
+          <sup id="text_county_location">IN</sup>
+        </h1>
+      </div>
+
+      <div class="icon-section" id="weather-icon">
+        <i class="fa-solid fa-cloud-sun"></i>
+      </div>
+
+      <div class="weather-info">
+        <div class="temperature">
+          <span id="text_temp">15</span><sup>°C</sup>
+        </div>
+        <div class="feels-like">
+          Feels like: <span id="text_feelslike">21</span><sup>°C</sup>
+        </div>
+        <p id="text_desc" class="weather-desc"></p>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" id="search_input" placeholder="Type a city..."/>
+        <button id="search_button">Get Weather</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
